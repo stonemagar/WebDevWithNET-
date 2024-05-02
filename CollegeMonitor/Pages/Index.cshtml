@@ -1,0 +1,54 @@
+﻿@page
+<div class="text-center">
+<h2>Welcome to College Monitor!</h2>
+ <img src="/images/college.jpg" alt="College Picture" width="100%"> 
+</div>
+
+
+@* @model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome to College Monitor</h1>
+    </div> *@
+
+@* @for (int i = 0; i < 3; i++)
+{
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+} *@
+
+@* 
+@{
+    // Loop to print numbers from 1 to 1000
+    for (int i = 1; i <= 1000; i++)
+    {
+        <span>@i</span> <!-- Print the number inside a paragraph -->
+    }
+}
+
+
+@{
+    int number = 45;
+    <h2>Multiplication Table of @number</h2> <!-- Display the table heading -->
+
+    <table border="1"> <!-- Start a table to display the multiplication table -->
+        <tr>
+            <th>Multiplier</th> <!-- Table header for the multiplier column -->
+            <th>Result</th> <!-- Table header for the result column -->
+        </tr>
+        @for (int i = 1; i <= 10; i++)
+        {
+            <tr>
+                <td>@number * @i =</td> <!-- Display the current multiplier -->
+                <td>@(i * number)</td> <!-- Calculate and display the result -->
+            </tr>
+        }
+    </table>
+} *@
